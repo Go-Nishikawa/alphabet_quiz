@@ -1,0 +1,541 @@
+[
+  {
+    "id": "international-who",
+    "category": "international",
+    "abbreviation": "WHO",
+    "fullForm": "World Health Organization",
+    "meaningJa": "世界保健機関",
+    "letterHints": [
+      { "letter": "W", "word": "World" },
+      { "letter": "H", "word": "Health" },
+      { "letter": "O", "word": "Organization" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "international-un",
+    "category": "international",
+    "abbreviation": "UN",
+    "fullForm": "United Nations",
+    "meaningJa": "国際連合",
+    "letterHints": [
+      { "letter": "U", "word": "United" },
+      { "letter": "N", "word": "Nations" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "international-nato",
+    "category": "international",
+    "abbreviation": "NATO",
+    "fullForm": "North Atlantic Treaty Organization",
+    "meaningJa": "北大西洋条約機構",
+    "letterHints": [
+      { "letter": "N", "word": "North" },
+      { "letter": "A", "word": "Atlantic" },
+      { "letter": "T", "word": "Treaty" },
+      { "letter": "O", "word": "Organization" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-eu",
+    "category": "international",
+    "abbreviation": "EU",
+    "fullForm": "European Union",
+    "meaningJa": "欧州連合",
+    "letterHints": [
+      { "letter": "E", "word": "European" },
+      { "letter": "U", "word": "Union" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "international-unesco",
+    "category": "international",
+    "abbreviation": "UNESCO",
+    "fullForm": "United Nations Educational, Scientific and Cultural Organization",
+    "meaningJa": "国連教育科学文化機関",
+    "letterHints": [
+      { "letter": "U", "word": "United" },
+      { "letter": "N", "word": "Nations" },
+      { "letter": "E", "word": "Educational" },
+      { "letter": "S", "word": "Scientific" },
+      { "letter": "C", "word": "Cultural" },
+      { "letter": "O", "word": "Organization" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-unicef",
+    "category": "international",
+    "abbreviation": "UNICEF",
+    "fullForm": "United Nations International Children's Emergency Fund",
+    "meaningJa": "国連児童基金",
+    "letterHints": [
+      { "letter": "U", "word": "United" },
+      { "letter": "N", "word": "Nations" },
+      { "letter": "I", "word": "International" },
+      { "letter": "C", "word": "Children's" },
+      { "letter": "E", "word": "Emergency" },
+      { "letter": "F", "word": "Fund" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-imf",
+    "category": "international",
+    "abbreviation": "IMF",
+    "fullForm": "International Monetary Fund",
+    "meaningJa": "国際通貨基金",
+    "letterHints": [
+      { "letter": "I", "word": "International" },
+      { "letter": "M", "word": "Monetary" },
+      { "letter": "F", "word": "Fund" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-wto",
+    "category": "international",
+    "abbreviation": "WTO",
+    "fullForm": "World Trade Organization",
+    "meaningJa": "世界貿易機関",
+    "letterHints": [
+      { "letter": "W", "word": "World" },
+      { "letter": "T", "word": "Trade" },
+      { "letter": "O", "word": "Organization" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-opec",
+    "category": "international",
+    "abbreviation": "OPEC",
+    "fullForm": "Organization of the Petroleum Exporting Countries",
+    "meaningJa": "石油輸出国機構",
+    "letterHints": [
+      { "letter": "O", "word": "Organization" },
+      { "letter": "P", "word": "Petroleum" },
+      { "letter": "E", "word": "Exporting" },
+      { "letter": "C", "word": "Countries" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-asean",
+    "category": "international",
+    "abbreviation": "ASEAN",
+    "fullForm": "Association of Southeast Asian Nations",
+    "meaningJa": "東南アジア諸国連合",
+    "letterHints": [
+      { "letter": "A", "word": "Association" },
+      { "letter": "S", "word": "South" },
+      { "letter": "E", "word": "East" },
+      { "letter": "A", "word": "Asian" },
+      { "letter": "N", "word": "Nations" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-g7",
+    "category": "international",
+    "abbreviation": "G7",
+    "fullForm": "Group of Seven",
+    "meaningJa": "先進7カ国",
+    "letterHints": [
+      { "letter": "G", "word": "Group" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-iaea",
+    "category": "international",
+    "abbreviation": "IAEA",
+    "fullForm": "International Atomic Energy Agency",
+    "meaningJa": "国際原子力機関",
+    "letterHints": [
+      { "letter": "I", "word": "International" },
+      { "letter": "A", "word": "Atomic" },
+      { "letter": "E", "word": "Energy" },
+      { "letter": "A", "word": "Agency" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-wwf",
+    "category": "international",
+    "abbreviation": "WWF",
+    "fullForm": "World Wide Fund for Nature",
+    "meaningJa": "世界自然保護基金",
+    "letterHints": [
+      { "letter": "W", "word": "World" },
+      { "letter": "W", "word": "Wide" },
+      { "letter": "F", "word": "Fund" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-icc",
+    "category": "international",
+    "abbreviation": "ICC",
+    "fullForm": "International Criminal Court",
+    "meaningJa": "国際刑事裁判所",
+    "letterHints": [
+      { "letter": "I", "word": "International" },
+      { "letter": "C", "word": "Criminal" },
+      { "letter": "C", "word": "Court" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-ioc",
+    "category": "international",
+    "abbreviation": "IOC",
+    "fullForm": "International Olympic Committee",
+    "meaningJa": "国際オリンピック委員会",
+    "letterHints": [
+      { "letter": "I", "word": "International" },
+      { "letter": "O", "word": "Olympic" },
+      { "letter": "C", "word": "Committee" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-fbi",
+    "category": "international",
+    "abbreviation": "FBI",
+    "fullForm": "Federal Bureau of Investigation",
+    "meaningJa": "連邦捜査局",
+    "letterHints": [
+      { "letter": "F", "word": "Federal" },
+      { "letter": "B", "word": "Bureau" },
+      { "letter": "I", "word": "Investigation" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "international-cia",
+    "category": "international",
+    "abbreviation": "CIA",
+    "fullForm": "Central Intelligence Agency",
+    "meaningJa": "中央情報局",
+    "letterHints": [
+      { "letter": "C", "word": "Central" },
+      { "letter": "I", "word": "Intelligence" },
+      { "letter": "A", "word": "Agency" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "international-oecd",
+    "category": "international",
+    "abbreviation": "OECD",
+    "fullForm": "Organisation for Economic Co-operation and Development",
+    "meaningJa": "経済協力開発機構",
+    "letterHints": [
+      { "letter": "O", "word": "Organisation" },
+      { "letter": "E", "word": "Economic" },
+      { "letter": "C", "word": "Co-operation" },
+      { "letter": "D", "word": "Development" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-ngo",
+    "category": "international",
+    "abbreviation": "NGO",
+    "fullForm": "Non-Governmental Organization",
+    "meaningJa": "非政府組織",
+    "letterHints": [
+      { "letter": "N", "word": "Non" },
+      { "letter": "G", "word": "Governmental" },
+      { "letter": "O", "word": "Organization" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-npo",
+    "category": "international",
+    "abbreviation": "NPO",
+    "fullForm": "Non-Profit Organization",
+    "meaningJa": "非営利団体",
+    "letterHints": [
+      { "letter": "N", "word": "Non" },
+      { "letter": "P", "word": "Profit" },
+      { "letter": "O", "word": "Organization" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-unhcr",
+    "category": "international",
+    "abbreviation": "UNHCR",
+    "fullForm": "United Nations High Commissioner for Refugees",
+    "meaningJa": "国連難民高等弁務官事務所",
+    "letterHints": [
+      { "letter": "U", "word": "United" },
+      { "letter": "N", "word": "Nations" },
+      { "letter": "H", "word": "High" },
+      { "letter": "C", "word": "Commissioner" },
+      { "letter": "R", "word": "Refugees" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-wfp",
+    "category": "international",
+    "abbreviation": "WFP",
+    "fullForm": "World Food Programme",
+    "meaningJa": "国連世界食糧計画",
+    "letterHints": [
+      { "letter": "W", "word": "World" },
+      { "letter": "F", "word": "Food" },
+      { "letter": "P", "word": "Programme" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-ilo",
+    "category": "international",
+    "abbreviation": "ILO",
+    "fullForm": "International Labour Organization",
+    "meaningJa": "国際労働機関",
+    "letterHints": [
+      { "letter": "I", "word": "International" },
+      { "letter": "L", "word": "Labour" },
+      { "letter": "O", "word": "Organization" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-fao",
+    "category": "international",
+    "abbreviation": "FAO",
+    "fullForm": "Food and Agriculture Organization",
+    "meaningJa": "国連食糧農業機関",
+    "letterHints": [
+      { "letter": "F", "word": "Food" },
+      { "letter": "A", "word": "Agriculture" },
+      { "letter": "O", "word": "Organization" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-wmo",
+    "category": "international",
+    "abbreviation": "WMO",
+    "fullForm": "World Meteorological Organization",
+    "meaningJa": "世界気象機関",
+    "letterHints": [
+      { "letter": "W", "word": "World" },
+      { "letter": "M", "word": "Meteorological" },
+      { "letter": "O", "word": "Organization" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-icj",
+    "category": "international",
+    "abbreviation": "ICJ",
+    "fullForm": "International Court of Justice",
+    "meaningJa": "国際司法裁判所",
+    "letterHints": [
+      { "letter": "I", "word": "International" },
+      { "letter": "C", "word": "Court" },
+      { "letter": "J", "word": "Justice" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-apec",
+    "category": "international",
+    "abbreviation": "APEC",
+    "fullForm": "Asia-Pacific Economic Cooperation",
+    "meaningJa": "アジア太平洋経済協力",
+    "letterHints": [
+      { "letter": "A", "word": "Asia" },
+      { "letter": "P", "word": "Pacific" },
+      { "letter": "E", "word": "Economic" },
+      { "letter": "C", "word": "Cooperation" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-nafta",
+    "category": "international",
+    "abbreviation": "NAFTA",
+    "fullForm": "North American Free Trade Agreement",
+    "meaningJa": "北米自由貿易協定",
+    "letterHints": [
+      { "letter": "N", "word": "North" },
+      { "letter": "A", "word": "American" },
+      { "letter": "F", "word": "Free" },
+      { "letter": "T", "word": "Trade" },
+      { "letter": "A", "word": "Agreement" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-brics",
+    "category": "international",
+    "abbreviation": "BRICS",
+    "fullForm": "Brazil, Russia, India, China, South Africa",
+    "meaningJa": "新興5カ国の総称",
+    "letterHints": [
+      { "letter": "B", "word": "Brazil" },
+      { "letter": "R", "word": "Russia" },
+      { "letter": "I", "word": "India" },
+      { "letter": "C", "word": "China" },
+      { "letter": "S", "word": "South" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-wef",
+    "category": "international",
+    "abbreviation": "WEF",
+    "fullForm": "World Economic Forum",
+    "meaningJa": "世界経済フォーラム(ダボス会議)",
+    "letterHints": [
+      { "letter": "W", "word": "World" },
+      { "letter": "E", "word": "Economic" },
+      { "letter": "F", "word": "Forum" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-iea",
+    "category": "international",
+    "abbreviation": "IEA",
+    "fullForm": "International Energy Agency",
+    "meaningJa": "国際エネルギー機関",
+    "letterHints": [
+      { "letter": "I", "word": "International" },
+      { "letter": "E", "word": "Energy" },
+      { "letter": "A", "word": "Agency" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-undp",
+    "category": "international",
+    "abbreviation": "UNDP",
+    "fullForm": "United Nations Development Programme",
+    "meaningJa": "国連開発計画",
+    "letterHints": [
+      { "letter": "U", "word": "United" },
+      { "letter": "N", "word": "Nations" },
+      { "letter": "D", "word": "Development" },
+      { "letter": "P", "word": "Programme" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-unsc",
+    "category": "international",
+    "abbreviation": "UNSC",
+    "fullForm": "United Nations Security Council",
+    "meaningJa": "国連安全保障理事会",
+    "letterHints": [
+      { "letter": "U", "word": "United" },
+      { "letter": "N", "word": "Nations" },
+      { "letter": "S", "word": "Security" },
+      { "letter": "C", "word": "Council" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-cern",
+    "category": "international",
+    "abbreviation": "CERN",
+    "fullForm": "Conseil Européen pour la Recherche Nucléaire",
+    "meaningJa": "欧州原子核研究機構(フランス語由来)",
+    "letterHints": [
+      { "letter": "C", "word": "Conseil" },
+      { "letter": "E", "word": "Européen" },
+      { "letter": "R", "word": "Recherche" },
+      { "letter": "N", "word": "Nucléaire" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-pm",
+    "category": "international",
+    "abbreviation": "PM",
+    "fullForm": "Prime Minister",
+    "meaningJa": "首相",
+    "letterHints": [
+      { "letter": "P", "word": "Prime" },
+      { "letter": "M", "word": "Minister" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "international-potus",
+    "category": "international",
+    "abbreviation": "POTUS",
+    "fullForm": "President Of The United States",
+    "meaningJa": "アメリカ合衆国大統領",
+    "letterHints": [
+      { "letter": "P", "word": "President" },
+      { "letter": "O", "word": "Of" },
+      { "letter": "T", "word": "The" },
+      { "letter": "U", "word": "United" },
+      { "letter": "S", "word": "States" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-icrc",
+    "category": "international",
+    "abbreviation": "ICRC",
+    "fullForm": "International Committee of the Red Cross",
+    "meaningJa": "赤十字国際委員会",
+    "letterHints": [
+      { "letter": "I", "word": "International" },
+      { "letter": "C", "word": "Committee" },
+      { "letter": "R", "word": "Red" },
+      { "letter": "C", "word": "Cross" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-oas",
+    "category": "international",
+    "abbreviation": "OAS",
+    "fullForm": "Organization of American States",
+    "meaningJa": "米州機構",
+    "letterHints": [
+      { "letter": "O", "word": "Organization" },
+      { "letter": "A", "word": "American" },
+      { "letter": "S", "word": "States" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "international-au",
+    "category": "international",
+    "abbreviation": "AU",
+    "fullForm": "African Union",
+    "meaningJa": "アフリカ連合",
+    "letterHints": [
+      { "letter": "A", "word": "African" },
+      { "letter": "U", "word": "Union" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "international-ghq",
+    "category": "international",
+    "abbreviation": "GHQ",
+    "fullForm": "General Headquarters",
+    "meaningJa": "連合国軍総司令部",
+    "letterHints": [
+      { "letter": "G", "word": "General" },
+      { "letter": "H", "word": "Head" },
+      { "letter": "Q", "word": "Quarters" }
+    ],
+    "difficulty": "medium"
+  }
+]

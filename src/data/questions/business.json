@@ -1,0 +1,519 @@
+[
+  {
+    "id": "business-gdp",
+    "category": "business",
+    "abbreviation": "GDP",
+    "fullForm": "Gross Domestic Product",
+    "meaningJa": "国内総生産",
+    "letterHints": [
+      { "letter": "G", "word": "Gross" },
+      { "letter": "D", "word": "Domestic" },
+      { "letter": "P", "word": "Product" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "business-kpi",
+    "category": "business",
+    "abbreviation": "KPI",
+    "fullForm": "Key Performance Indicator",
+    "meaningJa": "重要業績評価指標",
+    "letterHints": [
+      { "letter": "K", "word": "Key" },
+      { "letter": "P", "word": "Performance" },
+      { "letter": "I", "word": "Indicator" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "business-roi",
+    "category": "business",
+    "abbreviation": "ROI",
+    "fullForm": "Return On Investment",
+    "meaningJa": "投資収益率",
+    "letterHints": [
+      { "letter": "R", "word": "Return" },
+      { "letter": "O", "word": "On" },
+      { "letter": "I", "word": "Investment" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "business-ceo",
+    "category": "business",
+    "abbreviation": "CEO",
+    "fullForm": "Chief Executive Officer",
+    "meaningJa": "最高経営責任者",
+    "letterHints": [
+      { "letter": "C", "word": "Chief" },
+      { "letter": "E", "word": "Executive" },
+      { "letter": "O", "word": "Officer" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "business-cfo",
+    "category": "business",
+    "abbreviation": "CFO",
+    "fullForm": "Chief Financial Officer",
+    "meaningJa": "最高財務責任者",
+    "letterHints": [
+      { "letter": "C", "word": "Chief" },
+      { "letter": "F", "word": "Financial" },
+      { "letter": "O", "word": "Officer" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-coo",
+    "category": "business",
+    "abbreviation": "COO",
+    "fullForm": "Chief Operating Officer",
+    "meaningJa": "最高執行責任者",
+    "letterHints": [
+      { "letter": "C", "word": "Chief" },
+      { "letter": "O", "word": "Operating" },
+      { "letter": "O", "word": "Officer" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-cto",
+    "category": "business",
+    "abbreviation": "CTO",
+    "fullForm": "Chief Technology Officer",
+    "meaningJa": "最高技術責任者",
+    "letterHints": [
+      { "letter": "C", "word": "Chief" },
+      { "letter": "T", "word": "Technology" },
+      { "letter": "O", "word": "Officer" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-ipo",
+    "category": "business",
+    "abbreviation": "IPO",
+    "fullForm": "Initial Public Offering",
+    "meaningJa": "新規株式公開",
+    "letterHints": [
+      { "letter": "I", "word": "Initial" },
+      { "letter": "P", "word": "Public" },
+      { "letter": "O", "word": "Offering" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-sme",
+    "category": "business",
+    "abbreviation": "SME",
+    "fullForm": "Small and Medium-sized Enterprise",
+    "meaningJa": "中小企業",
+    "letterHints": [
+      { "letter": "S", "word": "Small" },
+      { "letter": "M", "word": "Medium-sized" },
+      { "letter": "E", "word": "Enterprise" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-nda",
+    "category": "business",
+    "abbreviation": "NDA",
+    "fullForm": "Non-Disclosure Agreement",
+    "meaningJa": "秘密保持契約",
+    "letterHints": [
+      { "letter": "N", "word": "Non" },
+      { "letter": "D", "word": "Disclosure" },
+      { "letter": "A", "word": "Agreement" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-hr",
+    "category": "business",
+    "abbreviation": "HR",
+    "fullForm": "Human Resources",
+    "meaningJa": "人事",
+    "letterHints": [
+      { "letter": "H", "word": "Human" },
+      { "letter": "R", "word": "Resources" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "business-pr",
+    "category": "business",
+    "abbreviation": "PR",
+    "fullForm": "Public Relations",
+    "meaningJa": "広報",
+    "letterHints": [
+      { "letter": "P", "word": "Public" },
+      { "letter": "R", "word": "Relations" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "business-atm",
+    "category": "business",
+    "abbreviation": "ATM",
+    "fullForm": "Automated Teller Machine",
+    "meaningJa": "現金自動預け払い機",
+    "letterHints": [
+      { "letter": "A", "word": "Automated" },
+      { "letter": "T", "word": "Teller" },
+      { "letter": "M", "word": "Machine" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "business-etf",
+    "category": "business",
+    "abbreviation": "ETF",
+    "fullForm": "Exchange Traded Fund",
+    "meaningJa": "上場投資信託",
+    "letterHints": [
+      { "letter": "E", "word": "Exchange" },
+      { "letter": "T", "word": "Traded" },
+      { "letter": "F", "word": "Fund" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-ira",
+    "category": "business",
+    "abbreviation": "IRA",
+    "fullForm": "Individual Retirement Account",
+    "meaningJa": "個人退職勘定",
+    "letterHints": [
+      { "letter": "I", "word": "Individual" },
+      { "letter": "R", "word": "Retirement" },
+      { "letter": "A", "word": "Account" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-llc",
+    "category": "business",
+    "abbreviation": "LLC",
+    "fullForm": "Limited Liability Company",
+    "meaningJa": "有限責任会社",
+    "letterHints": [
+      { "letter": "L", "word": "Limited" },
+      { "letter": "L", "word": "Liability" },
+      { "letter": "C", "word": "Company" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-b2b",
+    "category": "business",
+    "abbreviation": "B2B",
+    "fullForm": "Business to Business",
+    "meaningJa": "企業間取引",
+    "letterHints": [
+      { "letter": "B", "word": "Business" },
+      { "letter": "B", "word": "Business" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "business-b2c",
+    "category": "business",
+    "abbreviation": "B2C",
+    "fullForm": "Business to Consumer",
+    "meaningJa": "企業対消費者取引",
+    "letterHints": [
+      { "letter": "B", "word": "Business" },
+      { "letter": "C", "word": "Consumer" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "business-vc",
+    "category": "business",
+    "abbreviation": "VC",
+    "fullForm": "Venture Capital",
+    "meaningJa": "未上場企業に出資する投資会社",
+    "letterHints": [
+      { "letter": "V", "word": "Venture" },
+      { "letter": "C", "word": "Capital" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-ma",
+    "category": "business",
+    "abbreviation": "M&A",
+    "fullForm": "Mergers and Acquisitions",
+    "meaningJa": "合併と買収",
+    "letterHints": [
+      { "letter": "M", "word": "Mergers" },
+      { "letter": "A", "word": "Acquisitions" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-crm",
+    "category": "business",
+    "abbreviation": "CRM",
+    "fullForm": "Customer Relationship Management",
+    "meaningJa": "顧客との関係を管理する仕組み",
+    "letterHints": [
+      { "letter": "C", "word": "Customer" },
+      { "letter": "R", "word": "Relationship" },
+      { "letter": "M", "word": "Management" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-erp",
+    "category": "business",
+    "abbreviation": "ERP",
+    "fullForm": "Enterprise Resource Planning",
+    "meaningJa": "統合基幹業務システム",
+    "letterHints": [
+      { "letter": "E", "word": "Enterprise" },
+      { "letter": "R", "word": "Resource" },
+      { "letter": "P", "word": "Planning" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-sla",
+    "category": "business",
+    "abbreviation": "SLA",
+    "fullForm": "Service Level Agreement",
+    "meaningJa": "サービス品質の保証契約",
+    "letterHints": [
+      { "letter": "S", "word": "Service" },
+      { "letter": "L", "word": "Level" },
+      { "letter": "A", "word": "Agreement" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-roe",
+    "category": "business",
+    "abbreviation": "ROE",
+    "fullForm": "Return On Equity",
+    "meaningJa": "自己資本利益率",
+    "letterHints": [
+      { "letter": "R", "word": "Return" },
+      { "letter": "O", "word": "On" },
+      { "letter": "E", "word": "Equity" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-eps",
+    "category": "business",
+    "abbreviation": "EPS",
+    "fullForm": "Earnings Per Share",
+    "meaningJa": "1株当たり利益",
+    "letterHints": [
+      { "letter": "E", "word": "Earnings" },
+      { "letter": "P", "word": "Per" },
+      { "letter": "S", "word": "Share" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-csr",
+    "category": "business",
+    "abbreviation": "CSR",
+    "fullForm": "Corporate Social Responsibility",
+    "meaningJa": "企業の社会的責任",
+    "letterHints": [
+      { "letter": "C", "word": "Corporate" },
+      { "letter": "S", "word": "Social" },
+      { "letter": "R", "word": "Responsibility" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-esg",
+    "category": "business",
+    "abbreviation": "ESG",
+    "fullForm": "Environmental, Social and Governance",
+    "meaningJa": "環境・社会・企業統治への配慮",
+    "letterHints": [
+      { "letter": "E", "word": "Environmental" },
+      { "letter": "S", "word": "Social" },
+      { "letter": "G", "word": "Governance" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-oem",
+    "category": "business",
+    "abbreviation": "OEM",
+    "fullForm": "Original Equipment Manufacturer",
+    "meaningJa": "相手先ブランドでの製造",
+    "letterHints": [
+      { "letter": "O", "word": "Original" },
+      { "letter": "E", "word": "Equipment" },
+      { "letter": "M", "word": "Manufacturer" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-pos",
+    "category": "business",
+    "abbreviation": "POS",
+    "fullForm": "Point Of Sale",
+    "meaningJa": "販売時点で売上を記録する仕組み",
+    "letterHints": [
+      { "letter": "P", "word": "Point" },
+      { "letter": "O", "word": "Of" },
+      { "letter": "S", "word": "Sale" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-mba",
+    "category": "business",
+    "abbreviation": "MBA",
+    "fullForm": "Master of Business Administration",
+    "meaningJa": "経営学修士",
+    "letterHints": [
+      { "letter": "M", "word": "Master" },
+      { "letter": "B", "word": "Business" },
+      { "letter": "A", "word": "Administration" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-cv",
+    "category": "business",
+    "abbreviation": "CV",
+    "fullForm": "Curriculum Vitae",
+    "meaningJa": "職務経歴書",
+    "letterHints": [
+      { "letter": "C", "word": "Curriculum" },
+      { "letter": "V", "word": "Vitae" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-gdpr",
+    "category": "business",
+    "abbreviation": "GDPR",
+    "fullForm": "General Data Protection Regulation",
+    "meaningJa": "EUの個人情報保護規則",
+    "letterHints": [
+      { "letter": "G", "word": "General" },
+      { "letter": "D", "word": "Data" },
+      { "letter": "P", "word": "Protection" },
+      { "letter": "R", "word": "Regulation" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-fy",
+    "category": "business",
+    "abbreviation": "FY",
+    "fullForm": "Fiscal Year",
+    "meaningJa": "会計年度",
+    "letterHints": [
+      { "letter": "F", "word": "Fiscal" },
+      { "letter": "Y", "word": "Year" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-yoy",
+    "category": "business",
+    "abbreviation": "YoY",
+    "fullForm": "Year over Year",
+    "meaningJa": "前年同期との比較",
+    "letterHints": [
+      { "letter": "Y", "word": "Year" },
+      { "letter": "o", "word": "over" },
+      { "letter": "Y", "word": "Year" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-swot",
+    "category": "business",
+    "abbreviation": "SWOT",
+    "fullForm": "Strengths, Weaknesses, Opportunities, Threats",
+    "meaningJa": "強み・弱み・機会・脅威を整理する分析手法",
+    "letterHints": [
+      { "letter": "S", "word": "Strengths" },
+      { "letter": "W", "word": "Weaknesses" },
+      { "letter": "O", "word": "Opportunities" },
+      { "letter": "T", "word": "Threats" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-pdca",
+    "category": "business",
+    "abbreviation": "PDCA",
+    "fullForm": "Plan Do Check Act",
+    "meaningJa": "計画から改善までを繰り返す管理手法",
+    "letterHints": [
+      { "letter": "P", "word": "Plan" },
+      { "letter": "D", "word": "Do" },
+      { "letter": "C", "word": "Check" },
+      { "letter": "A", "word": "Act" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "business-cogs",
+    "category": "business",
+    "abbreviation": "COGS",
+    "fullForm": "Cost Of Goods Sold",
+    "meaningJa": "売上原価",
+    "letterHints": [
+      { "letter": "C", "word": "Cost" },
+      { "letter": "O", "word": "Of" },
+      { "letter": "G", "word": "Goods" },
+      { "letter": "S", "word": "Sold" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-agm",
+    "category": "business",
+    "abbreviation": "AGM",
+    "fullForm": "Annual General Meeting",
+    "meaningJa": "年次株主総会",
+    "letterHints": [
+      { "letter": "A", "word": "Annual" },
+      { "letter": "G", "word": "General" },
+      { "letter": "M", "word": "Meeting" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-cagr",
+    "category": "business",
+    "abbreviation": "CAGR",
+    "fullForm": "Compound Annual Growth Rate",
+    "meaningJa": "年平均成長率",
+    "letterHints": [
+      { "letter": "C", "word": "Compound" },
+      { "letter": "A", "word": "Annual" },
+      { "letter": "G", "word": "Growth" },
+      { "letter": "R", "word": "Rate" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "business-vat",
+    "category": "business",
+    "abbreviation": "VAT",
+    "fullForm": "Value Added Tax",
+    "meaningJa": "付加価値税",
+    "letterHints": [
+      { "letter": "V", "word": "Value" },
+      { "letter": "A", "word": "Added" },
+      { "letter": "T", "word": "Tax" }
+    ],
+    "difficulty": "medium"
+  }
+]

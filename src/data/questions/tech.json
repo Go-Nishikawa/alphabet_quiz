@@ -1,0 +1,523 @@
+[
+  {
+    "id": "tech-cpu",
+    "category": "tech",
+    "abbreviation": "CPU",
+    "fullForm": "Central Processing Unit",
+    "meaningJa": "中央演算処理装置",
+    "letterHints": [
+      { "letter": "C", "word": "Central" },
+      { "letter": "P", "word": "Processing" },
+      { "letter": "U", "word": "Unit" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-ram",
+    "category": "tech",
+    "abbreviation": "RAM",
+    "fullForm": "Random Access Memory",
+    "meaningJa": "読み書きできる主記憶装置",
+    "letterHints": [
+      { "letter": "R", "word": "Random" },
+      { "letter": "A", "word": "Access" },
+      { "letter": "M", "word": "Memory" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-rom",
+    "category": "tech",
+    "abbreviation": "ROM",
+    "fullForm": "Read Only Memory",
+    "meaningJa": "内容を書き換えられない記憶装置",
+    "letterHints": [
+      { "letter": "R", "word": "Read" },
+      { "letter": "O", "word": "Only" },
+      { "letter": "M", "word": "Memory" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-api",
+    "category": "tech",
+    "abbreviation": "API",
+    "fullForm": "Application Programming Interface",
+    "meaningJa": "ソフトウェア同士をつなぐ接続仕様",
+    "letterHints": [
+      { "letter": "A", "word": "Application" },
+      { "letter": "P", "word": "Programming" },
+      { "letter": "I", "word": "Interface" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-http",
+    "category": "tech",
+    "abbreviation": "HTTP",
+    "fullForm": "HyperText Transfer Protocol",
+    "meaningJa": "Webページをやり取りする通信規約",
+    "letterHints": [
+      { "letter": "H", "word": "Hyper" },
+      { "letter": "T", "word": "Text" },
+      { "letter": "T", "word": "Transfer" },
+      { "letter": "P", "word": "Protocol" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-https",
+    "category": "tech",
+    "abbreviation": "HTTPS",
+    "fullForm": "HyperText Transfer Protocol Secure",
+    "meaningJa": "暗号化されたWeb通信の規約",
+    "letterHints": [
+      { "letter": "H", "word": "Hyper" },
+      { "letter": "T", "word": "Text" },
+      { "letter": "T", "word": "Transfer" },
+      { "letter": "P", "word": "Protocol" },
+      { "letter": "S", "word": "Secure" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-url",
+    "category": "tech",
+    "abbreviation": "URL",
+    "fullForm": "Uniform Resource Locator",
+    "meaningJa": "Web上の住所を表す文字列",
+    "letterHints": [
+      { "letter": "U", "word": "Uniform" },
+      { "letter": "R", "word": "Resource" },
+      { "letter": "L", "word": "Locator" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-html",
+    "category": "tech",
+    "abbreviation": "HTML",
+    "fullForm": "HyperText Markup Language",
+    "meaningJa": "Webページの構造を記述する言語",
+    "letterHints": [
+      { "letter": "H", "word": "Hyper" },
+      { "letter": "T", "word": "Text" },
+      { "letter": "M", "word": "Markup" },
+      { "letter": "L", "word": "Language" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-css",
+    "category": "tech",
+    "abbreviation": "CSS",
+    "fullForm": "Cascading Style Sheets",
+    "meaningJa": "Webページの見た目を指定する言語",
+    "letterHints": [
+      { "letter": "C", "word": "Cascading" },
+      { "letter": "S", "word": "Style" },
+      { "letter": "S", "word": "Sheets" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-sql",
+    "category": "tech",
+    "abbreviation": "SQL",
+    "fullForm": "Structured Query Language",
+    "meaningJa": "データベースを操作する言語",
+    "letterHints": [
+      { "letter": "S", "word": "Structured" },
+      { "letter": "Q", "word": "Query" },
+      { "letter": "L", "word": "Language" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-gpu",
+    "category": "tech",
+    "abbreviation": "GPU",
+    "fullForm": "Graphics Processing Unit",
+    "meaningJa": "画像処理装置",
+    "letterHints": [
+      { "letter": "G", "word": "Graphics" },
+      { "letter": "P", "word": "Processing" },
+      { "letter": "U", "word": "Unit" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-ssd",
+    "category": "tech",
+    "abbreviation": "SSD",
+    "fullForm": "Solid State Drive",
+    "meaningJa": "半導体を使った高速な記憶装置",
+    "letterHints": [
+      { "letter": "S", "word": "Solid" },
+      { "letter": "S", "word": "State" },
+      { "letter": "D", "word": "Drive" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-usb",
+    "category": "tech",
+    "abbreviation": "USB",
+    "fullForm": "Universal Serial Bus",
+    "meaningJa": "周辺機器をつなぐ共通の接続規格",
+    "letterHints": [
+      { "letter": "U", "word": "Universal" },
+      { "letter": "S", "word": "Serial" },
+      { "letter": "B", "word": "Bus" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-lan",
+    "category": "tech",
+    "abbreviation": "LAN",
+    "fullForm": "Local Area Network",
+    "meaningJa": "構内通信網",
+    "letterHints": [
+      { "letter": "L", "word": "Local" },
+      { "letter": "A", "word": "Area" },
+      { "letter": "N", "word": "Network" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-wan",
+    "category": "tech",
+    "abbreviation": "WAN",
+    "fullForm": "Wide Area Network",
+    "meaningJa": "広域通信網",
+    "letterHints": [
+      { "letter": "W", "word": "Wide" },
+      { "letter": "A", "word": "Area" },
+      { "letter": "N", "word": "Network" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-iot",
+    "category": "tech",
+    "abbreviation": "IoT",
+    "fullForm": "Internet of Things",
+    "meaningJa": "あらゆる機器がネットにつながる仕組み",
+    "letterHints": [
+      { "letter": "I", "word": "Internet" },
+      { "letter": "o", "word": "of" },
+      { "letter": "T", "word": "Things" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-ai",
+    "category": "tech",
+    "abbreviation": "AI",
+    "fullForm": "Artificial Intelligence",
+    "meaningJa": "人工知能",
+    "letterHints": [
+      { "letter": "A", "word": "Artificial" },
+      { "letter": "I", "word": "Intelligence" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-os",
+    "category": "tech",
+    "abbreviation": "OS",
+    "fullForm": "Operating System",
+    "meaningJa": "コンピュータの基本ソフト",
+    "letterHints": [
+      { "letter": "O", "word": "Operating" },
+      { "letter": "S", "word": "System" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-ide",
+    "category": "tech",
+    "abbreviation": "IDE",
+    "fullForm": "Integrated Development Environment",
+    "meaningJa": "統合開発環境",
+    "letterHints": [
+      { "letter": "I", "word": "Integrated" },
+      { "letter": "D", "word": "Development" },
+      { "letter": "E", "word": "Environment" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "tech-vpn",
+    "category": "tech",
+    "abbreviation": "VPN",
+    "fullForm": "Virtual Private Network",
+    "meaningJa": "公衆回線上に作る安全な専用通信経路",
+    "letterHints": [
+      { "letter": "V", "word": "Virtual" },
+      { "letter": "P", "word": "Private" },
+      { "letter": "N", "word": "Network" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-dns",
+    "category": "tech",
+    "abbreviation": "DNS",
+    "fullForm": "Domain Name System",
+    "meaningJa": "名前をネット上の住所に変換する仕組み",
+    "letterHints": [
+      { "letter": "D", "word": "Domain" },
+      { "letter": "N", "word": "Name" },
+      { "letter": "S", "word": "System" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-ip",
+    "category": "tech",
+    "abbreviation": "IP",
+    "fullForm": "Internet Protocol",
+    "meaningJa": "ネット上の住所を定める規約",
+    "letterHints": [
+      { "letter": "I", "word": "Internet" },
+      { "letter": "P", "word": "Protocol" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-tcp",
+    "category": "tech",
+    "abbreviation": "TCP",
+    "fullForm": "Transmission Control Protocol",
+    "meaningJa": "データを確実に届けるための通信規約",
+    "letterHints": [
+      { "letter": "T", "word": "Transmission" },
+      { "letter": "C", "word": "Control" },
+      { "letter": "P", "word": "Protocol" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "tech-ftp",
+    "category": "tech",
+    "abbreviation": "FTP",
+    "fullForm": "File Transfer Protocol",
+    "meaningJa": "ファイルをやり取りする通信規約",
+    "letterHints": [
+      { "letter": "F", "word": "File" },
+      { "letter": "T", "word": "Transfer" },
+      { "letter": "P", "word": "Protocol" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-smtp",
+    "category": "tech",
+    "abbreviation": "SMTP",
+    "fullForm": "Simple Mail Transfer Protocol",
+    "meaningJa": "メールを送信するための通信規約",
+    "letterHints": [
+      { "letter": "S", "word": "Simple" },
+      { "letter": "M", "word": "Mail" },
+      { "letter": "T", "word": "Transfer" },
+      { "letter": "P", "word": "Protocol" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "tech-json",
+    "category": "tech",
+    "abbreviation": "JSON",
+    "fullForm": "JavaScript Object Notation",
+    "meaningJa": "データをやり取りする軽量な記述形式",
+    "letterHints": [
+      { "letter": "J", "word": "Java" },
+      { "letter": "S", "word": "Script" },
+      { "letter": "O", "word": "Object" },
+      { "letter": "N", "word": "Notation" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-cdn",
+    "category": "tech",
+    "abbreviation": "CDN",
+    "fullForm": "Content Delivery Network",
+    "meaningJa": "配信を高速化する分散配置の仕組み",
+    "letterHints": [
+      { "letter": "C", "word": "Content" },
+      { "letter": "D", "word": "Delivery" },
+      { "letter": "N", "word": "Network" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "tech-sdk",
+    "category": "tech",
+    "abbreviation": "SDK",
+    "fullForm": "Software Development Kit",
+    "meaningJa": "開発に必要な道具一式",
+    "letterHints": [
+      { "letter": "S", "word": "Software" },
+      { "letter": "D", "word": "Development" },
+      { "letter": "K", "word": "Kit" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-ui",
+    "category": "tech",
+    "abbreviation": "UI",
+    "fullForm": "User Interface",
+    "meaningJa": "利用者が直接触れる画面や操作部分",
+    "letterHints": [
+      { "letter": "U", "word": "User" },
+      { "letter": "I", "word": "Interface" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-cli",
+    "category": "tech",
+    "abbreviation": "CLI",
+    "fullForm": "Command Line Interface",
+    "meaningJa": "文字を打ち込んで操作する方式",
+    "letterHints": [
+      { "letter": "C", "word": "Command" },
+      { "letter": "L", "word": "Line" },
+      { "letter": "I", "word": "Interface" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-gui",
+    "category": "tech",
+    "abbreviation": "GUI",
+    "fullForm": "Graphical User Interface",
+    "meaningJa": "画面を見ながら操作する方式",
+    "letterHints": [
+      { "letter": "G", "word": "Graphical" },
+      { "letter": "U", "word": "User" },
+      { "letter": "I", "word": "Interface" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-bios",
+    "category": "tech",
+    "abbreviation": "BIOS",
+    "fullForm": "Basic Input Output System",
+    "meaningJa": "起動時に最初に動く基本制御プログラム",
+    "letterHints": [
+      { "letter": "B", "word": "Basic" },
+      { "letter": "I", "word": "Input" },
+      { "letter": "O", "word": "Output" },
+      { "letter": "S", "word": "System" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "tech-vr",
+    "category": "tech",
+    "abbreviation": "VR",
+    "fullForm": "Virtual Reality",
+    "meaningJa": "仮想現実",
+    "letterHints": [
+      { "letter": "V", "word": "Virtual" },
+      { "letter": "R", "word": "Reality" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-ar",
+    "category": "tech",
+    "abbreviation": "AR",
+    "fullForm": "Augmented Reality",
+    "meaningJa": "拡張現実",
+    "letterHints": [
+      { "letter": "A", "word": "Augmented" },
+      { "letter": "R", "word": "Reality" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-ml",
+    "category": "tech",
+    "abbreviation": "ML",
+    "fullForm": "Machine Learning",
+    "meaningJa": "機械学習",
+    "letterHints": [
+      { "letter": "M", "word": "Machine" },
+      { "letter": "L", "word": "Learning" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "tech-nlp",
+    "category": "tech",
+    "abbreviation": "NLP",
+    "fullForm": "Natural Language Processing",
+    "meaningJa": "自然言語処理",
+    "letterHints": [
+      { "letter": "N", "word": "Natural" },
+      { "letter": "L", "word": "Language" },
+      { "letter": "P", "word": "Processing" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-ocr",
+    "category": "tech",
+    "abbreviation": "OCR",
+    "fullForm": "Optical Character Recognition",
+    "meaningJa": "画像から文字を読み取る技術",
+    "letterHints": [
+      { "letter": "O", "word": "Optical" },
+      { "letter": "C", "word": "Character" },
+      { "letter": "R", "word": "Recognition" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "tech-pdf",
+    "category": "tech",
+    "abbreviation": "PDF",
+    "fullForm": "Portable Document Format",
+    "meaningJa": "環境が変わっても表示が崩れない文書形式",
+    "letterHints": [
+      { "letter": "P", "word": "Portable" },
+      { "letter": "D", "word": "Document" },
+      { "letter": "F", "word": "Format" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-saas",
+    "category": "tech",
+    "abbreviation": "SaaS",
+    "fullForm": "Software as a Service",
+    "meaningJa": "ソフトを買わずに使う形の提供方式",
+    "letterHints": [
+      { "letter": "S", "word": "Software" },
+      { "letter": "a", "word": "as" },
+      { "letter": "a", "word": "a" },
+      { "letter": "S", "word": "Service" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "tech-hdd",
+    "category": "tech",
+    "abbreviation": "HDD",
+    "fullForm": "Hard Disk Drive",
+    "meaningJa": "円盤を回して記録する記憶装置",
+    "letterHints": [
+      { "letter": "H", "word": "Hard" },
+      { "letter": "D", "word": "Disk" },
+      { "letter": "D", "word": "Drive" }
+    ],
+    "difficulty": "easy"
+  }
+]

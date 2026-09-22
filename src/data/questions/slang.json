@@ -1,0 +1,528 @@
+[
+  {
+    "id": "slang-lol",
+    "category": "slang",
+    "abbreviation": "LOL",
+    "fullForm": "Laughing Out Loud",
+    "meaningJa": "(笑)、大笑い",
+    "letterHints": [
+      { "letter": "L", "word": "Laughing" },
+      { "letter": "O", "word": "Out" },
+      { "letter": "L", "word": "Loud" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-fyi",
+    "category": "slang",
+    "abbreviation": "FYI",
+    "fullForm": "For Your Information",
+    "meaningJa": "参考までに",
+    "letterHints": [
+      { "letter": "F", "word": "For" },
+      { "letter": "Y", "word": "Your" },
+      { "letter": "I", "word": "Information" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-asap",
+    "category": "slang",
+    "abbreviation": "ASAP",
+    "fullForm": "As Soon As Possible",
+    "meaningJa": "できるだけ早く",
+    "letterHints": [
+      { "letter": "A", "word": "As" },
+      { "letter": "S", "word": "Soon" },
+      { "letter": "A", "word": "As" },
+      { "letter": "P", "word": "Possible" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-btw",
+    "category": "slang",
+    "abbreviation": "BTW",
+    "fullForm": "By The Way",
+    "meaningJa": "ところで",
+    "letterHints": [
+      { "letter": "B", "word": "By" },
+      { "letter": "T", "word": "The" },
+      { "letter": "W", "word": "Way" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-imo",
+    "category": "slang",
+    "abbreviation": "IMO",
+    "fullForm": "In My Opinion",
+    "meaningJa": "私の意見では",
+    "letterHints": [
+      { "letter": "I", "word": "In" },
+      { "letter": "M", "word": "My" },
+      { "letter": "O", "word": "Opinion" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-imho",
+    "category": "slang",
+    "abbreviation": "IMHO",
+    "fullForm": "In My Humble Opinion",
+    "meaningJa": "私のつたない意見では",
+    "letterHints": [
+      { "letter": "I", "word": "In" },
+      { "letter": "M", "word": "My" },
+      { "letter": "H", "word": "Humble" },
+      { "letter": "O", "word": "Opinion" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-tbh",
+    "category": "slang",
+    "abbreviation": "TBH",
+    "fullForm": "To Be Honest",
+    "meaningJa": "正直に言うと",
+    "letterHints": [
+      { "letter": "T", "word": "To" },
+      { "letter": "B", "word": "Be" },
+      { "letter": "H", "word": "Honest" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-idk",
+    "category": "slang",
+    "abbreviation": "IDK",
+    "fullForm": "I Don't Know",
+    "meaningJa": "知らない",
+    "letterHints": [
+      { "letter": "I", "word": "I" },
+      { "letter": "D", "word": "Don't" },
+      { "letter": "K", "word": "Know" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-omg",
+    "category": "slang",
+    "abbreviation": "OMG",
+    "fullForm": "Oh My God",
+    "meaningJa": "なんてこと",
+    "letterHints": [
+      { "letter": "O", "word": "Oh" },
+      { "letter": "M", "word": "My" },
+      { "letter": "G", "word": "God" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-brb",
+    "category": "slang",
+    "abbreviation": "BRB",
+    "fullForm": "Be Right Back",
+    "meaningJa": "すぐ戻る",
+    "letterHints": [
+      { "letter": "B", "word": "Be" },
+      { "letter": "R", "word": "Right" },
+      { "letter": "B", "word": "Back" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-ttyl",
+    "category": "slang",
+    "abbreviation": "TTYL",
+    "fullForm": "Talk To You Later",
+    "meaningJa": "また後で話そう",
+    "letterHints": [
+      { "letter": "T", "word": "Talk" },
+      { "letter": "T", "word": "To" },
+      { "letter": "Y", "word": "You" },
+      { "letter": "L", "word": "Later" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-gg",
+    "category": "slang",
+    "abbreviation": "GG",
+    "fullForm": "Good Game",
+    "meaningJa": "いい勝負だった(対戦後のあいさつ)",
+    "letterHints": [
+      { "letter": "G", "word": "Good" },
+      { "letter": "G", "word": "Game" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-np",
+    "category": "slang",
+    "abbreviation": "NP",
+    "fullForm": "No Problem",
+    "meaningJa": "問題ないよ",
+    "letterHints": [
+      { "letter": "N", "word": "No" },
+      { "letter": "P", "word": "Problem" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-tmi",
+    "category": "slang",
+    "abbreviation": "TMI",
+    "fullForm": "Too Much Information",
+    "meaningJa": "そこまで知りたくない",
+    "letterHints": [
+      { "letter": "T", "word": "Too" },
+      { "letter": "M", "word": "Much" },
+      { "letter": "I", "word": "Information" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-afk",
+    "category": "slang",
+    "abbreviation": "AFK",
+    "fullForm": "Away From Keyboard",
+    "meaningJa": "一時的に席を外している",
+    "letterHints": [
+      { "letter": "A", "word": "Away" },
+      { "letter": "F", "word": "From" },
+      { "letter": "K", "word": "Keyboard" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-diy",
+    "category": "slang",
+    "abbreviation": "DIY",
+    "fullForm": "Do It Yourself",
+    "meaningJa": "自分でやること",
+    "letterHints": [
+      { "letter": "D", "word": "Do" },
+      { "letter": "I", "word": "It" },
+      { "letter": "Y", "word": "Yourself" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-rsvp",
+    "category": "slang",
+    "abbreviation": "RSVP",
+    "fullForm": "Répondez S'il Vous Plaît",
+    "meaningJa": "出欠のご返答をお願いします",
+    "letterHints": [
+      { "letter": "R", "word": "Répondez" },
+      { "letter": "S", "word": "S'il" },
+      { "letter": "V", "word": "Vous" },
+      { "letter": "P", "word": "Plaît" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "slang-faq",
+    "category": "slang",
+    "abbreviation": "FAQ",
+    "fullForm": "Frequently Asked Questions",
+    "meaningJa": "よくある質問",
+    "letterHints": [
+      { "letter": "F", "word": "Frequently" },
+      { "letter": "A", "word": "Asked" },
+      { "letter": "Q", "word": "Questions" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-eta",
+    "category": "slang",
+    "abbreviation": "ETA",
+    "fullForm": "Estimated Time of Arrival",
+    "meaningJa": "到着予定時刻",
+    "letterHints": [
+      { "letter": "E", "word": "Estimated" },
+      { "letter": "T", "word": "Time" },
+      { "letter": "A", "word": "Arrival" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-fomo",
+    "category": "slang",
+    "abbreviation": "FOMO",
+    "fullForm": "Fear Of Missing Out",
+    "meaningJa": "取り残される恐怖",
+    "letterHints": [
+      { "letter": "F", "word": "Fear" },
+      { "letter": "O", "word": "Of" },
+      { "letter": "M", "word": "Missing" },
+      { "letter": "O", "word": "Out" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-bff",
+    "category": "slang",
+    "abbreviation": "BFF",
+    "fullForm": "Best Friends Forever",
+    "meaningJa": "一番の親友",
+    "letterHints": [
+      { "letter": "B", "word": "Best" },
+      { "letter": "F", "word": "Friends" },
+      { "letter": "F", "word": "Forever" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-irl",
+    "category": "slang",
+    "abbreviation": "IRL",
+    "fullForm": "In Real Life",
+    "meaningJa": "ネットではなく現実で",
+    "letterHints": [
+      { "letter": "I", "word": "In" },
+      { "letter": "R", "word": "Real" },
+      { "letter": "L", "word": "Life" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-dm",
+    "category": "slang",
+    "abbreviation": "DM",
+    "fullForm": "Direct Message",
+    "meaningJa": "個別に送るメッセージ",
+    "letterHints": [
+      { "letter": "D", "word": "Direct" },
+      { "letter": "M", "word": "Message" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-tgif",
+    "category": "slang",
+    "abbreviation": "TGIF",
+    "fullForm": "Thank God It's Friday",
+    "meaningJa": "やっと金曜日だ",
+    "letterHints": [
+      { "letter": "T", "word": "Thank" },
+      { "letter": "G", "word": "God" },
+      { "letter": "I", "word": "It's" },
+      { "letter": "F", "word": "Friday" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-yolo",
+    "category": "slang",
+    "abbreviation": "YOLO",
+    "fullForm": "You Only Live Once",
+    "meaningJa": "人生は一度きり",
+    "letterHints": [
+      { "letter": "Y", "word": "You" },
+      { "letter": "O", "word": "Only" },
+      { "letter": "L", "word": "Live" },
+      { "letter": "O", "word": "Once" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-icymi",
+    "category": "slang",
+    "abbreviation": "ICYMI",
+    "fullForm": "In Case You Missed It",
+    "meaningJa": "見逃した人のために",
+    "letterHints": [
+      { "letter": "I", "word": "In" },
+      { "letter": "C", "word": "Case" },
+      { "letter": "Y", "word": "You" },
+      { "letter": "M", "word": "Missed" },
+      { "letter": "I", "word": "It" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "slang-tba",
+    "category": "slang",
+    "abbreviation": "TBA",
+    "fullForm": "To Be Announced",
+    "meaningJa": "追って発表",
+    "letterHints": [
+      { "letter": "T", "word": "To" },
+      { "letter": "B", "word": "Be" },
+      { "letter": "A", "word": "Announced" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-tbd",
+    "category": "slang",
+    "abbreviation": "TBD",
+    "fullForm": "To Be Determined",
+    "meaningJa": "まだ決まっていない",
+    "letterHints": [
+      { "letter": "T", "word": "To" },
+      { "letter": "B", "word": "Be" },
+      { "letter": "D", "word": "Determined" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-aka",
+    "category": "slang",
+    "abbreviation": "AKA",
+    "fullForm": "Also Known As",
+    "meaningJa": "別名、通称",
+    "letterHints": [
+      { "letter": "A", "word": "Also" },
+      { "letter": "K", "word": "Known" },
+      { "letter": "A", "word": "As" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-ooo",
+    "category": "slang",
+    "abbreviation": "OOO",
+    "fullForm": "Out Of Office",
+    "meaningJa": "不在中",
+    "letterHints": [
+      { "letter": "O", "word": "Out" },
+      { "letter": "O", "word": "Of" },
+      { "letter": "O", "word": "Office" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "slang-wfh",
+    "category": "slang",
+    "abbreviation": "WFH",
+    "fullForm": "Work From Home",
+    "meaningJa": "在宅勤務",
+    "letterHints": [
+      { "letter": "W", "word": "Work" },
+      { "letter": "F", "word": "From" },
+      { "letter": "H", "word": "Home" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-eod",
+    "category": "slang",
+    "abbreviation": "EOD",
+    "fullForm": "End Of Day",
+    "meaningJa": "その日の終わりまでに",
+    "letterHints": [
+      { "letter": "E", "word": "End" },
+      { "letter": "O", "word": "Of" },
+      { "letter": "D", "word": "Day" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-fwiw",
+    "category": "slang",
+    "abbreviation": "FWIW",
+    "fullForm": "For What It's Worth",
+    "meaningJa": "参考程度だけど",
+    "letterHints": [
+      { "letter": "F", "word": "For" },
+      { "letter": "W", "word": "What" },
+      { "letter": "I", "word": "It's" },
+      { "letter": "W", "word": "Worth" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "slang-nsfw",
+    "category": "slang",
+    "abbreviation": "NSFW",
+    "fullForm": "Not Safe For Work",
+    "meaningJa": "職場で開くと危ない内容",
+    "letterHints": [
+      { "letter": "N", "word": "Not" },
+      { "letter": "S", "word": "Safe" },
+      { "letter": "F", "word": "For" },
+      { "letter": "W", "word": "Work" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-jk",
+    "category": "slang",
+    "abbreviation": "JK",
+    "fullForm": "Just Kidding",
+    "meaningJa": "冗談だよ",
+    "letterHints": [
+      { "letter": "J", "word": "Just" },
+      { "letter": "K", "word": "Kidding" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-smh",
+    "category": "slang",
+    "abbreviation": "SMH",
+    "fullForm": "Shaking My Head",
+    "meaningJa": "あきれて首を振る",
+    "letterHints": [
+      { "letter": "S", "word": "Shaking" },
+      { "letter": "M", "word": "My" },
+      { "letter": "H", "word": "Head" }
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "id": "slang-til",
+    "category": "slang",
+    "abbreviation": "TIL",
+    "fullForm": "Today I Learned",
+    "meaningJa": "今日はじめて知った",
+    "letterHints": [
+      { "letter": "T", "word": "Today" },
+      { "letter": "I", "word": "I" },
+      { "letter": "L", "word": "Learned" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-ama",
+    "category": "slang",
+    "abbreviation": "AMA",
+    "fullForm": "Ask Me Anything",
+    "meaningJa": "何でも質問どうぞ",
+    "letterHints": [
+      { "letter": "A", "word": "Ask" },
+      { "letter": "M", "word": "Me" },
+      { "letter": "A", "word": "Anything" }
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "id": "slang-vip",
+    "category": "slang",
+    "abbreviation": "VIP",
+    "fullForm": "Very Important Person",
+    "meaningJa": "特別扱いされる重要人物",
+    "letterHints": [
+      { "letter": "V", "word": "Very" },
+      { "letter": "I", "word": "Important" },
+      { "letter": "P", "word": "Person" }
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "id": "slang-cc",
+    "category": "slang",
+    "abbreviation": "CC",
+    "fullForm": "Carbon Copy",
+    "meaningJa": "メールの同報先",
+    "letterHints": [
+      { "letter": "C", "word": "Carbon" },
+      { "letter": "C", "word": "Copy" }
+    ],
+    "difficulty": "medium"
+  }
+]
