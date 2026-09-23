@@ -83,12 +83,15 @@ function layout({ title, description, path, body, jsonLd, image = "/og/default.p
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(title)}">
+<meta name="twitter:description" content="${esc(description)}">
 <meta name="twitter:image" content="${esc(imageUrl)}">
+<meta name="twitter:image:alt" content="${esc(title)}">
 ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replaceAll("<", "\\u003c")}</script>` : ""}
 <script async src="https://www.googletagmanager.com/gtag/js?id=${site.gaMeasurementId}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","${site.gaMeasurementId}");</script>
 <style>${STYLE}</style>
-<script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a.share");if(!a||!navigator.share||!matchMedia("(pointer: coarse)").matches)return;e.preventDefault();navigator.share({text:a.dataset.text,url:a.dataset.url}).catch(function(err){if(err&&err.name!=="AbortError")window.open(a.href,"_blank","noopener")})});</script>
+<script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a.share");if(!a||!navigator.share||!matchMedia("(pointer: coarse)").matches)return;e.preventDefault();navigator.share({text:a.dataset.text+"\\n"+a.dataset.url}).catch(function(err){if(err&&err.name!=="AbortError")window.open(a.href,"_blank","noopener")})});</script>
 </head>
 <body>
 <div class="wrap">

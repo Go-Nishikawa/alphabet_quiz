@@ -6,6 +6,7 @@ import {
   submitScore,
 } from "../utils/leaderboardApi.js";
 import { trackEvent } from "../utils/analytics.js";
+import { abbreviationSlug } from "../utils/slug.js";
 import { buildIntentUrl, buildShareParams, handleShareClick } from "../utils/share.js";
 
 export default function ResultScreen({
@@ -191,6 +192,23 @@ export default function ResultScreen({
           </ul>
         </section>
       )}
+
+      <section className="section">
+        <h2>今回の略語の解説ページ</h2>
+        <ul className="explain-links">
+          {records.map((record) => (
+            <li key={record.abbreviation}>
+              <a
+                href={`/abbr/${abbreviationSlug(record.abbreviation)}`}
+                target="_blank"
+                rel="noopener"
+              >
+                {record.abbreviation}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <div className="result-actions">
         <button type="button" className="primary-button" onClick={onRestart}>

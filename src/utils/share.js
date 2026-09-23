@@ -23,7 +23,8 @@ function shouldUseNativeShare() {
 export function handleShareClick(event, params) {
   if (!shouldUseNativeShare()) return;
   event.preventDefault();
-  navigator.share(params).catch((error) => {
+  // Xアプリは text と url を別々に渡すと url しか採用しないことがあるため、本文にURLを含めて1本で渡す。
+  navigator.share({ text: `${params.text}\n${params.url}` }).catch((error) => {
     if (error?.name === "AbortError") return;
     window.open(buildIntentUrl(params), "_blank", "noopener");
   });
