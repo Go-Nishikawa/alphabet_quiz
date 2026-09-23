@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { gradeAnswer, scoreQuestion, timeLimitFor } from "../utils/quiz.js";
 import { trackEvent } from "../utils/analytics.js";
+import { abbreviationSlug } from "../utils/slug.js";
 
 const TICK_MS = 100;
 
@@ -229,6 +230,15 @@ export default function QuizScreen({
           <p className="feedback__explanation">
             {current.abbreviation} = {current.fullForm}
             (「{current.meaningJa}」)
+          </p>
+          <p className="feedback__more">
+            <a
+              href={`/abbr/${abbreviationSlug(current.abbreviation)}`}
+              target="_blank"
+              rel="noopener"
+            >
+              {current.abbreviation}の解説ページ
+            </a>
           </p>
           <button type="button" className="primary-button" onClick={handleNext}>
             {isLast ? "結果を見る" : "次の問題へ"}

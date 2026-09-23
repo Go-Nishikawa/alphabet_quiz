@@ -72,6 +72,7 @@ export default function App() {
   }
 
   return (
+    <>
     <div className="app">
       {screen === "top" && (
         <TopScreen onStart={startQuiz} onShowLeaderboard={showLeaderboard} />
@@ -96,5 +97,12 @@ export default function App() {
       )}
       {screen === "leaderboard" && <LeaderboardScreen onGoTop={goToTop} />}
     </div>
+    {screen !== "quiz" && (
+      <footer className="site-footer">
+        <a href="/abbr">略語一覧</a>
+        <a href="/privacy">プライバシーポリシー</a>
+      </footer>
+    )}
+    </>
   );
 }
