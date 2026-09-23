@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { gradeAnswer, scoreQuestion, timeLimitFor } from "../utils/quiz.js";
+import { trackEvent } from "../utils/analytics.js";
 
 const TICK_MS = 100;
 
@@ -21,6 +22,7 @@ export default function QuizScreen({
   // タイマー経由の採点は再レンダリングを挟まないので、最新の入力を ref で参照する。
   const inputsRef = useRef(inputs);
   const deadlineRef = useRef(0);
+  const finishedRef = useRef(false);
 
   const total = questions.length;
   const current = questions[index];
@@ -47,9 +49,32 @@ export default function QuizScreen({
       setCombo(nextCombo);
       setTotalScore((prev) => prev + score.total);
       setGraded({ ...result, score, timedOut: timeRatio === 0 && useTimeLimit });
+
+      trackEvent("question_answered", {
+        abbreviation: current.abbreviation,
+        category: current.category,
+        earned: result.earned,
+        max: result.max,
+        perfect: result.perfect,
+        timed_out: timeRatio === 0 && useTimeLimit,
+        score: score.total,
+      });
     },
     [current, combo, useTimeLimit],
   );
+
+  // ページを閉じる/離れる = 完了前の離脱として、どの問題番号で止めたかを記録する。
+  useEffect(() => {
+    function handlePageHide() {
+      if (finishedRef.current) return;
+      trackEvent("quiz_abandon", {
+        question_index: index + 1,
+        question_count: total,
+      });
+    }
+    window.addEventListener("pagehide", handlePageHide);
+    return () => window.removeEventListener("pagehide", handlePageHide);
+  }, [index, total]);
 
   useEffect(() => {
     if (!useTimeLimit || graded) return undefined;
@@ -100,6 +125,7 @@ export default function QuizScreen({
     ];
 
     if (isLast) {
+      finishedRef.current = true;
       onFinish(nextRecords, totalScore);
       return;
     }
