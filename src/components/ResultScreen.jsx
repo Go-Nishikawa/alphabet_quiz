@@ -6,7 +6,7 @@ import {
   submitScore,
 } from "../utils/leaderboardApi.js";
 import { trackEvent } from "../utils/analytics.js";
-import { buildShareUrl } from "../utils/share.js";
+import { buildIntentUrl, buildShareParams, handleShareClick } from "../utils/share.js";
 
 export default function ResultScreen({
   records,
@@ -27,7 +27,7 @@ export default function ResultScreen({
   const missed = records.filter((r) => !r.perfect);
   const rank = rankFor(score, records.length);
   const thresholds = rankThresholds(records.length);
-  const shareUrl = buildShareUrl({ score, rank, perfectCount, total: records.length });
+  const shareParams = buildShareParams({ score, rank, perfectCount, total: records.length });
   const nextRank = [...thresholds].reverse().find(({ min }) => score < min);
 
   async function handleSubmit(e) {
@@ -93,10 +93,13 @@ export default function ResultScreen({
 
       <a
         className="primary-button share-button"
-        href={shareUrl}
+        href={buildIntentUrl(shareParams)}
         target="_blank"
         rel="noopener"
-        onClick={() => trackEvent("share_click", { score, rank, place: "result" })}
+        onClick={(event) => {
+          trackEvent("share_click", { score, rank, place: "result" });
+          handleShareClick(event, shareParams);
+        }}
       >
         Xで結果をシェア
       </a>

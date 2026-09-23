@@ -88,6 +88,7 @@ ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replaceA
 <script async src="https://www.googletagmanager.com/gtag/js?id=${site.gaMeasurementId}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","${site.gaMeasurementId}");</script>
 <style>${STYLE}</style>
+<script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a.share");if(!a||!navigator.share||!matchMedia("(pointer: coarse)").matches)return;e.preventDefault();navigator.share({text:a.dataset.text,url:a.dataset.url}).catch(function(err){if(err&&err.name!=="AbortError")window.open(a.href,"_blank","noopener")})});</script>
 </head>
 <body>
 <div class="wrap">
@@ -116,7 +117,8 @@ function abbreviationPage(question, sameCategory, categoryName, questionTotal) {
     .join("");
 
   const title = `${abbreviation}とは?正式名称・意味・各文字の由来 | ${site.siteName}`;
-  const shareUrl = `https://x.com/intent/post?text=${encodeURIComponent(`${abbreviation}とは?${fullForm}(${meaningJa}) #略語クイズ`)}&url=${encodeURIComponent(`${site.siteUrl}/abbr/${slug}`)}`;
+  const shareText = `${abbreviation}とは?${fullForm}(${meaningJa}) #略語クイズ`;
+  const shareUrl = `https://x.com/intent/post?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(`${site.siteUrl}/abbr/${slug}`)}`;
   const description = `${abbreviation}は「${fullForm}」の略で、${meaningJa}を意味します。各文字が何の略かを一覧で解説し、クイズで確認できます。`;
 
   const body = `<nav class="crumbs"><a href="/">ホーム</a> &gt; <a href="/abbr">略語一覧</a> &gt; ${esc(abbreviation)}</nav>
@@ -130,7 +132,7 @@ function abbreviationPage(question, sameCategory, categoryName, questionTotal) {
 <div class="card"><p>${esc(categoryName)}の略語${sameCategory.length}個を含む全${questionTotal}個の略語を、各文字が何の略か答える形式で練習できます。</p><a class="cta" href="/">クイズに挑戦する</a></div>
 <h2>${esc(categoryName)}の関連する略語</h2>
 <ul class="chips">${relatedLinks}</ul>
-<p><a class="share" href="${esc(shareUrl)}" target="_blank" rel="noopener">Xで共有する</a></p>
+<p><a class="share" href="${esc(shareUrl)}" data-text="${esc(shareText)}" data-url="${esc(`${site.siteUrl}/abbr/${slug}`)}" target="_blank" rel="noopener">Xで共有する</a></p>
 </article>`;
 
   const jsonLd = {
