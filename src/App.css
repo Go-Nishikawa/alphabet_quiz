@@ -606,3 +606,10 @@
 .feedback__more a {
   color: var(--accent);
 }
+
+.share-button {
+  display: block;
+  margin-bottom: 4px;
+  text-align: center;
+  text-decoration: none;
+}

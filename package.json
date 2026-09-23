@@ -16,6 +16,8 @@
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
+    "@expo-google-fonts/noto-sans-jp": "^0.4.3",
+    "@resvg/resvg-wasm": "^2.6.2",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",

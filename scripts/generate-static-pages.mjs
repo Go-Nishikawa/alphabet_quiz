@@ -8,6 +8,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { CATEGORIES } from "../src/data/categories.js";
 import { abbreviationSlug } from "../src/utils/slug.js";
+import { initOgRenderer, renderOgPng } from "./og-image.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = join(ROOT, "dist");
@@ -56,11 +57,13 @@ th{width:5rem;font-size:1.3rem;color:var(--accent)}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
 .chips a{display:inline-block;padding:6px 14px;border:1px solid var(--border);border-radius:999px;background:var(--surface);text-decoration:none}
 .card{padding:16px;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+.share{display:inline-block;padding:8px 18px;border:1px solid var(--border);border-radius:999px;background:var(--surface);text-decoration:none}
 footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:.85rem;display:flex;flex-wrap:wrap;gap:16px}
 `;
 
-function layout({ title, description, path, body, jsonLd }) {
+function layout({ title, description, path, body, jsonLd, image = "/og/default.png" }) {
   const url = `${site.siteUrl}${path}`;
+  const imageUrl = `${site.siteUrl}${image}`;
   return `<!doctype html>
 <html lang="ja">
 <head>
@@ -76,7 +79,11 @@ function layout({ title, description, path, body, jsonLd }) {
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${esc(url)}">
 <meta property="og:locale" content="ja_JP">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="${esc(imageUrl)}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${esc(imageUrl)}">
 ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replaceAll("<", "\\u003c")}</script>` : ""}
 <script async src="https://www.googletagmanager.com/gtag/js?id=${site.gaMeasurementId}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","${site.gaMeasurementId}");</script>
@@ -109,6 +116,7 @@ function abbreviationPage(question, sameCategory, categoryName, questionTotal) {
     .join("");
 
   const title = `${abbreviation}とは?正式名称・意味・各文字の由来 | ${site.siteName}`;
+  const shareUrl = `https://x.com/intent/post?text=${encodeURIComponent(`${abbreviation}とは?${fullForm}(${meaningJa}) #略語クイズ`)}&url=${encodeURIComponent(`${site.siteUrl}/abbr/${slug}`)}`;
   const description = `${abbreviation}は「${fullForm}」の略で、${meaningJa}を意味します。各文字が何の略かを一覧で解説し、クイズで確認できます。`;
 
   const body = `<nav class="crumbs"><a href="/">ホーム</a> &gt; <a href="/abbr">略語一覧</a> &gt; ${esc(abbreviation)}</nav>
@@ -122,6 +130,7 @@ function abbreviationPage(question, sameCategory, categoryName, questionTotal) {
 <div class="card"><p>${esc(categoryName)}の略語${sameCategory.length}個を含む全${questionTotal}個の略語を、各文字が何の略か答える形式で練習できます。</p><a class="cta" href="/">クイズに挑戦する</a></div>
 <h2>${esc(categoryName)}の関連する略語</h2>
 <ul class="chips">${relatedLinks}</ul>
+<p><a class="share" href="${esc(shareUrl)}" target="_blank" rel="noopener">Xで共有する</a></p>
 </article>`;
 
   const jsonLd = {
@@ -134,7 +143,7 @@ function abbreviationPage(question, sameCategory, categoryName, questionTotal) {
     url: `${site.siteUrl}/abbr/${slug}`,
   };
 
-  return { path: `/abbr/${slug}`, html: layout({ title, description, path: `/abbr/${slug}`, body, jsonLd }) };
+  return { path: `/abbr/${slug}`, html: layout({ title, description, path: `/abbr/${slug}`, body, jsonLd, image: `/og/${slug}.png` }) };
 }
 
 function indexPage(questions) {
@@ -215,12 +224,24 @@ for (const q of questions) {
   slugs.set(slug, q.abbreviation);
 }
 
+await initOgRenderer();
+const host = new URL(site.siteUrl).host;
+const ogCommon = { siteName: site.siteName, host, footer: "各文字が何の略か答えよう" };
+writePage(
+  "og/default.png",
+  renderOgPng({ ...ogCommon, headline: "GDP KPI CPU", subtitle: "何の略か、文字ごとに答えよう", detail: `ビジネス・IT・国際機関・ネットスラング ${questions.length}個` }),
+);
+
 const paths = ["/", "/abbr", "/privacy"];
 for (const category of CATEGORIES) {
   const sameCategory = questions.filter((q) => q.category === category.id);
   for (const question of sameCategory) {
     const page = abbreviationPage(question, sameCategory, category.name, questions.length);
     writePage(`${page.path}.html`, page.html);
+    writePage(
+      `og/${abbreviationSlug(question.abbreviation)}.png`,
+      renderOgPng({ ...ogCommon, headline: question.abbreviation, subtitle: question.fullForm, detail: question.meaningJa }),
+    );
     paths.push(page.path);
   }
 }
@@ -229,4 +250,4 @@ writePage("privacy.html", privacyPage());
 writePage("sitemap.xml", sitemapXml(paths));
 writePage("robots.txt", `User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${site.siteUrl}/sitemap.xml\n`);
 
-console.log(`静的ページを生成しました: 略語${questions.length}ページ + 一覧 + プライバシー + sitemap.xml(${paths.length}URL) + robots.txt`);
+console.log(`静的ページとOGP画像を生成しました: 略語${questions.length}ページ + 一覧 + プライバシー + sitemap.xml(${paths.length}URL) + robots.txt`);
