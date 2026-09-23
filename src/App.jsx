@@ -2,6 +2,7 @@ import { useState } from "react";
 import TopScreen from "./components/TopScreen.jsx";
 import QuizScreen from "./components/QuizScreen.jsx";
 import ResultScreen from "./components/ResultScreen.jsx";
+import LeaderboardScreen from "./components/LeaderboardScreen.jsx";
 import { buildQuizQuestions, rankFor } from "./utils/quiz.js";
 import { appendHistory } from "./utils/storage.js";
 import { trackEvent } from "./utils/analytics.js";
@@ -66,9 +67,15 @@ export default function App() {
     setScreen("top");
   }
 
+  function showLeaderboard() {
+    setScreen("leaderboard");
+  }
+
   return (
     <div className="app">
-      {screen === "top" && <TopScreen onStart={startQuiz} />}
+      {screen === "top" && (
+        <TopScreen onStart={startQuiz} onShowLeaderboard={showLeaderboard} />
+      )}
       {screen === "quiz" && (
         <QuizScreen
           key={questions.map((q) => q.id).join(",")}
@@ -84,8 +91,10 @@ export default function App() {
           score={score}
           onRestart={restartQuiz}
           onGoTop={goToTop}
+          onShowLeaderboard={showLeaderboard}
         />
       )}
+      {screen === "leaderboard" && <LeaderboardScreen onGoTop={goToTop} />}
     </div>
   );
 }

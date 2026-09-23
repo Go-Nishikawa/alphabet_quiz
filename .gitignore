@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 .vercel
 .env*
+
+# Vercel integration add で自動生成されるエージェント向け参考資料(アプリ本体ではない)
+.agents/
+.claude/
+skills-lock.json

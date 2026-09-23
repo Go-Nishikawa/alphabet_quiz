@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CATEGORIES } from "../data/categories.js";
 import CategoryCard from "./CategoryCard.jsx";
 
-export default function TopScreen({ onStart }) {
+export default function TopScreen({ onStart, onShowLeaderboard }) {
   const [selectedCategories, setSelectedCategories] = useState(
     CATEGORIES.map((c) => c.id),
   );
@@ -66,6 +66,14 @@ export default function TopScreen({ onStart }) {
         クイズを始める
       </button>
       {!canStart && <p className="hint">カテゴリを1つ以上選んでください</p>}
+
+      <button
+        type="button"
+        className="secondary-button leaderboard-link"
+        onClick={onShowLeaderboard}
+      >
+        ランキングを見る
+      </button>
     </div>
   );
 }

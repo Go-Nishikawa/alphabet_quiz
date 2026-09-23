@@ -1,6 +1,24 @@
+import { useState } from "react";
 import { rankFor, rankThresholds } from "../utils/quiz.js";
+import {
+  loadSavedNickname,
+  saveNickname,
+  submitScore,
+} from "../utils/leaderboardApi.js";
+import { trackEvent } from "../utils/analytics.js";
 
-export default function ResultScreen({ records, score, onRestart, onGoTop }) {
+export default function ResultScreen({
+  records,
+  score,
+  onRestart,
+  onGoTop,
+  onShowLeaderboard,
+}) {
+  const [name, setName] = useState(loadSavedNickname);
+  const [status, setStatus] = useState("idle"); // idle | submitting | submitted | error
+  const [leaderboardRank, setLeaderboardRank] = useState(null);
+  const [errorMessage, setErrorMessage] = useState("");
+
   const totalEarned = records.reduce((sum, r) => sum + r.earned, 0);
   const totalMax = records.reduce((sum, r) => sum + r.max, 0);
   const accuracy = totalMax > 0 ? Math.round((totalEarned / totalMax) * 100) : 0;
@@ -9,6 +27,29 @@ export default function ResultScreen({ records, score, onRestart, onGoTop }) {
   const rank = rankFor(score, records.length);
   const thresholds = rankThresholds(records.length);
   const nextRank = [...thresholds].reverse().find(({ min }) => score < min);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const trimmed = name.trim();
+    if (trimmed === "" || status === "submitting") return;
+
+    setStatus("submitting");
+    setErrorMessage("");
+    try {
+      const result = await submitScore({
+        name: trimmed,
+        score,
+        questionCount: records.length,
+      });
+      saveNickname(trimmed);
+      setLeaderboardRank(result.rank);
+      setStatus("submitted");
+      trackEvent("leaderboard_submit", { score, rank: result.rank });
+    } catch (err) {
+      setErrorMessage(err.message);
+      setStatus("error");
+    }
+  }
 
   return (
     <div className="screen result-screen">
@@ -47,6 +88,51 @@ export default function ResultScreen({ records, score, onRestart, onGoTop }) {
           </li>
         </ul>
       </div>
+
+      <section className="section leaderboard-submit">
+        {status === "submitted" ? (
+          <p className="leaderboard-submit__done">
+            {leaderboardRank
+              ? `ランキング ${leaderboardRank} 位に登録しました!`
+              : "ランキングに登録しました!"}
+          </p>
+        ) : (
+          <form className="leaderboard-submit__form" onSubmit={handleSubmit}>
+            <label className="leaderboard-submit__label" htmlFor="nickname">
+              ニックネームでランキングに登録
+            </label>
+            <div className="leaderboard-submit__row">
+              <input
+                id="nickname"
+                type="text"
+                className="leaderboard-submit__input"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                maxLength={20}
+                placeholder="ニックネーム"
+                disabled={status === "submitting"}
+              />
+              <button
+                type="submit"
+                className="primary-button"
+                disabled={status === "submitting" || name.trim() === ""}
+              >
+                {status === "submitting" ? "送信中…" : "登録する"}
+              </button>
+            </div>
+            {status === "error" && (
+              <p className="leaderboard-submit__error">{errorMessage}</p>
+            )}
+          </form>
+        )}
+        <button
+          type="button"
+          className="secondary-button leaderboard-submit__view"
+          onClick={onShowLeaderboard}
+        >
+          ランキングを見る
+        </button>
+      </section>
 
       {missed.length > 0 && (
         <section className="section">

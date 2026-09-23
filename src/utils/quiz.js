@@ -1,4 +1,12 @@
 import { QUESTIONS_BY_CATEGORY, ALL_QUESTIONS } from "../data/index.js";
+import {
+  BASE_POINTS,
+  MAX_SPEED_BONUS,
+  COMBO_BONUS_STEP,
+  MAX_COMBO_BONUS,
+} from "./scoreConstants.js";
+
+export { BASE_POINTS, MAX_SPEED_BONUS, COMBO_BONUS_STEP, MAX_COMBO_BONUS };
 
 export function shuffle(array) {
   const result = [...array];
@@ -31,11 +39,6 @@ export function buildQuizQuestions(categoryIds, count = 10) {
 
   return shuffle(pool).slice(0, Math.min(count, pool.length));
 }
-
-export const BASE_POINTS = 100;
-export const MAX_SPEED_BONUS = 50;
-export const COMBO_BONUS_STEP = 10;
-export const MAX_COMBO_BONUS = 50;
 
 const TIME_LIMIT_BASE_MS = 8000;
 const TIME_LIMIT_PER_BLANK_MS = 7000;
